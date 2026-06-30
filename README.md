@@ -30,7 +30,7 @@
 ### 설치 및 실행
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/name-tetris.git
+git clone https://github.com/youngclown/name-tetris.git
 cd name-tetris
 npm install
 npm start
