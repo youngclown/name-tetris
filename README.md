@@ -43,39 +43,34 @@ Expo 개발 서버가 실행되면:
 
 ## Android APK 빌드 (테스트용 설치 파일)
 
-PC에 Android Studio나 Java 없이 **EAS 클라우드**로 APK를 만들 수 있습니다.
+### 방법 A: 로컬 빌드 (Expo 로그인 불필요, 권장)
 
-### 1단계: Expo 가입 및 로그인 (최초 1회)
+Android Studio가 설치되어 있으면 PC에서 바로 APK를 만듭니다.
 
-1. [expo.dev](https://expo.dev) 에서 무료 계정 생성
-2. 터미널에서 로그인:
+```bash
+npm run build:apk:local
+```
+
+빌드 완료 후 APK 위치:
+
+```
+releases/OOi-Tetris-test.apk
+```
+
+### 방법 B: EAS 클라우드 빌드
 
 ```bash
 npx eas-cli login
-```
-
-### 2단계: APK 빌드
-
-```bash
 npm run build:apk
 ```
 
-또는 PowerShell:
+빌드 완료 후 [expo.dev](https://expo.dev) → Builds 에서 APK 다운로드
 
-```powershell
-.\scripts\build-apk.ps1
-```
+### APK 설치
 
-### 3단계: APK 설치
-
-- 빌드 완료 후 [expo.dev](https://expo.dev) → 프로젝트 → Builds 에서 **APK 다운로드**
-- 폰으로 전송 후 설치 (출처를 알 수 없는 앱 허용 필요할 수 있음)
-
-### GitHub Actions로 빌드 (선택)
-
-1. Expo → Account Settings → Access Tokens 에서 토큰 생성
-2. GitHub 저장소 → Settings → Secrets → `EXPO_TOKEN` 추가
-3. Actions 탭 → **Build Android APK** → Run workflow
+1. `OOi-Tetris-test.apk` 를 폰으로 전송 (USB, 카카오톡 등)
+2. 파일 탭해서 설치
+3. 필요 시 **출처를 알 수 없는 앱** 설치 허용
 
 ## 프로젝트 구조
 

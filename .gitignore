@@ -14,3 +14,5 @@ npm-debug.*
 web-build/
 android/
 ios/
+releases/*.apk
+agent-tools/
