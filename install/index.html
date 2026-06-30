@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OO이 테트리스 설치</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(160deg, #1a1a2e, #2d2d44);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: #2d2d44;
+      border-radius: 24px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    h1 { color: #ffe66d; font-size: 28px; margin: 0 0 8px; }
+    p { color: #d1d5db; line-height: 1.6; margin: 0 0 24px; }
+    a.btn {
+      display: block;
+      background: #4ecdc4;
+      color: #1a1a2e;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 800;
+      padding: 18px 24px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+    }
+    .step {
+      text-align: left;
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #9ca3af;
+    }
+    .step strong { color: #f9a8d4; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>OO이 테트리스</h1>
+    <p>아래 버튼만 누르면 게임이 다운로드됩니다!</p>
+    <a class="btn" href="OOi-Tetris-test.apk" download>게임 다운로드</a>
+    <div class="step">
+      <strong>설치 방법</strong><br>
+      1. 위 버튼 누르기<br>
+      2. 다운로드된 파일 탭하기<br>
+      3. "설치" 누르기<br>
+      4. 막히면 설정에서 이 출처 허용
+    </div>
+  </div>
+</body>
+</html>

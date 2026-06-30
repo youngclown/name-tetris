@@ -29,14 +29,14 @@ if (-not (Test-Path "android")) {
     npx expo prebuild --platform android --no-install
 }
 
-Write-Host "APK 빌드 중... (5~10분 소요)" -ForegroundColor Yellow
+Write-Host "APK 빌드 중... (5~10분 소요, Metro 없이 단독 실행)" -ForegroundColor Yellow
 Set-Location android
-.\gradlew.bat assembleDebug --no-daemon
+.\gradlew.bat assembleRelease --no-daemon
 Set-Location $projectRoot
 
-$sourceApk = "android\app\build\outputs\apk\debug\app-debug.apk"
+$sourceApk = "android\app\build\outputs\apk\release\app-release.apk"
 $destDir = "releases"
-$destApk = "$destDir\OOi-Tetris-test.apk"
+$destApk = "$destDir\OOi-Tetris.apk"
 
 New-Item -ItemType Directory -Force -Path $destDir | Out-Null
 Copy-Item $sourceApk $destApk -Force
