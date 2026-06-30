@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "OO이 테트리스",
+    "slug": "name-tetris",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "description": "이름을 넣어 나만의 블록 퍼즐 게임을 만들어 보세요. 광고 없는 퍼즐 게임.",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nametetris.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.nametetris.app"
+    },
+    "scheme": "name-tetris"
+  }
+}
