@@ -57,14 +57,16 @@ npm run build:apk:local
 releases/OOi-Tetris-test.apk
 ```
 
-### 방법 B: EAS 클라우드 빌드
+### 방법 B: EAS 클라우드 빌드 (권장 — 스토어 배포용)
 
 ```bash
 npx eas-cli login
+npx eas-cli init --id 4459b403-0cda-4b04-a51c-b95f981e7e9c
 npm run build:apk
 ```
 
-빌드 완료 후 [expo.dev](https://expo.dev) → Builds 에서 APK 다운로드
+`production` 프로필로 APK가 빌드됩니다.  
+빌드 완료 후 [expo.dev](https://expo.dev) → **name-tetris** → Builds 에서 APK 다운로드
 
 ### APK 설치
 

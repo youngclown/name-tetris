@@ -24,6 +24,11 @@
       },
       "package": "com.nametetris.app"
     },
-    "scheme": "name-tetris"
+    "scheme": "name-tetris",
+    "extra": {
+      "eas": {
+        "projectId": "4459b403-0cda-4b04-a51c-b95f981e7e9c"
+      }
+    }
   }
 }

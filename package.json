@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "build:apk": "eas build --platform android --profile preview",
+    "build:apk": "eas build --platform android --profile production",
+    "build:apk:preview": "eas build --platform android --profile preview",
     "build:apk:local": "powershell -ExecutionPolicy Bypass -File scripts/build-apk-local.ps1"
   },
   "dependencies": {

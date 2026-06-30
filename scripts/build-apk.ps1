@@ -15,7 +15,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Android APK 빌드를 시작합니다 (EAS 클라우드)..." -ForegroundColor Green
-& $eas build --platform android --profile preview
+& $eas build --platform android --profile production
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
